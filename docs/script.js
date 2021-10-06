@@ -20,6 +20,7 @@ Screenshot = () => {
   canvas.height = video.videoHeight;
   canvas.getContext('2d').drawImage(video, 0, 0);
   Img.src = canvas.toDataURL('image/png');
+  Img.style.display = 'inline';
 };
 
 snap_btn.addEventListener('click', Screenshot)
